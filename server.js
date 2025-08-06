@@ -27,7 +27,7 @@ console.log(`   PUBLIC_URL: ${process.env.PUBLIC_URL}`);
 const app = express();
 app.use(express.json()); // parse JSON bodies
 app.use(cookieParser()); // parse cookies
-const PORT = process.env.PORT || 9595;
+const PORT = process.env.PORT || 9750;
 const HOST = process.env.HOST || '0.0.0.0'; // 0.0.0.0 ensures the server binds to all network interfaces
 const PUBLIC_URL = process.env.PUBLIC_URL || `https://${HOST}:${PORT}`;
 
@@ -56,7 +56,7 @@ const pool = mysql.createPool({
   host:"0.0.0.0",
   user: 'root',
   password: 'WELcome@123',
-  database: 'spc',
+  database: 'dubaisouth',
   port: 3306,
   waitForConnections: true,
   connectionLimit: 5,
